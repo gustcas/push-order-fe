@@ -1,0 +1,82 @@
+/* Espaciado entre elementos */
+.p-mb-2 {
+    margin-bottom: 1rem; /* Ajusta el espacio según tus preferencias */
+  }
+  
+  /* Tamaño adaptable de los campos de texto y contraseña */
+ 
+  .p-password {
+    width: 100%;
+    height: 50px; /* Ajusta la altura según tus preferencias */
+    @media (max-width: 768px) {  
+      margin: auto;  
+      width: 100%;
+    }
+  }
+  .p-inputtext{
+    width: 100%;
+    height: 50px; /* Ajusta la altura según tus preferencias */    
+  
+    border: radius 500px; ;
+    @media (max-width: 768px) {  
+      margin: auto;  
+      width: 100%;
+    }
+  }
+  
+  /* Botón con estilo y tamaño adaptable */
+  .p-button-raised {
+    width: 100%;
+    height: 50px; /* Ajusta la altura según tus preferencias */
+    background-color: #f69f43 !important;
+    border-color: lightgray !important;;
+    @media (max-width: 768px) {  
+      margin: auto;  
+      width: 100%;
+    }
+  }
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .login-card {
+    background-color: azure; /* Set background color for card */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    padding: 20px;
+  }
+  
+  .login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .form-fields {
+    margin: auto;    
+    width: 30%; 
+    @media (max-width: 768px) {  
+      margin: auto;  
+      width: 80%;
+    }
+  }
+
+  .logo {
+    margin: auto;    
+    width: 40%;     
+    @media (max-width: 768px) {   
+      margin: auto;  
+      padding: 20px;  
+      width: 80%;     
+    }
+  }
+  .m-card{
+    background-color: #f69f43 !important;
+    width: 80%;
+  }

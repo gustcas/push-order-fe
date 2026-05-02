@@ -1,0 +1,64 @@
+/* OverlayPanelDemo.css */
+
+.overlaypanel-demo .select-product-button {
+    min-width: 15rem;
+}
+
+.overlaypanel-demo .product-image {
+    width: 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+/*Estilos generales*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*Estilos para la lista*/
+  .list-item-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /*Estilos para el grid*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    border-radius: 1px rgb(221, 221, 221);
+    background-color: #ffffff;    
+  }
+  
+  .grid-item-container {
+    border-bottom: 0.1em solid #ddd;
+    padding: 25px;
+  }
+  .grid-item-btn {
+    height: 50px;
+    margin-left: 70%;    
+    margin-top: -10%;
+    display: grid;
+  }
+  .grid-item-text {
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    word-wrap: break-word;
+  }
+  .grid-item-text-p {
+    color: #0388E5;
+    word-wrap: break-word;
+  }
+  .grid-item-text-l {
+    color: #495057;
+    word-wrap: break-word;
+  }
+  
+  /*Media queries para responsive*/
+  @media (max-width: 768px) {
+    .grid {
+      display: block !important;
+    }
+  }

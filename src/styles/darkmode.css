@@ -1,0 +1,196 @@
+/* ─── Dark Mode Variables ─────────────────────────────────────── */
+/* The dark mode class lives on .pos-layout, NOT on body.         */
+/* Use ".dark-mode selector" (descendant), never "body.dark-mode" */
+.dark-mode {
+  --card-bg: #27273a;
+  --card-bg-alt: #2d2d44;
+  --surface-ground: #1e1e2e;
+  --surface-card: #27273a;
+  --surface-overlay: #2d2d44;
+  --surface-border: #3d3d5c;
+  --text-color: #e2e8f0;
+  --text-color-secondary: #94a3b8;
+  --text-color-muted: #64748b;
+  background-color: var(--surface-ground);
+  color: var(--text-color);
+}
+
+/* ─── Cards ───────────────────────────────────────────────────── */
+.dark-mode .card,
+.dark-mode .p-card,
+.dark-mode .p-card .p-card-body,
+.dark-mode .p-card .p-card-content {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+
+/* ─── DataTable ───────────────────────────────────────────────── */
+.dark-mode .p-datatable .p-datatable-header {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-datatable .p-datatable-thead > tr > th {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-datatable .p-datatable-tbody > tr {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+}
+.dark-mode .p-datatable .p-datatable-tbody > tr > td {
+  border-color: var(--surface-border) !important;
+  color: var(--text-color) !important;
+}
+.dark-mode .p-datatable .p-datatable-tbody > tr:hover {
+  background-color: var(--surface-overlay) !important;
+}
+.dark-mode .p-datatable .p-datatable-tbody > tr.p-highlight {
+  background-color: rgba(246, 159, 67, 0.15) !important;
+  color: #f69f43 !important;
+}
+.dark-mode .p-datatable .p-datatable-tfoot > tr > td {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-paginator {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-paginator .p-paginator-pages .p-paginator-page,
+.dark-mode .p-paginator button,
+.dark-mode .p-paginator .p-paginator-current {
+  color: var(--text-color) !important;
+}
+.dark-mode .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background-color: rgba(246, 159, 67, 0.2) !important;
+  color: #f69f43 !important;
+}
+
+/* ─── Dialog ──────────────────────────────────────────────────── */
+.dark-mode .p-dialog {
+  background-color: var(--surface-card) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-dialog .p-dialog-header,
+.dark-mode .p-dialog .p-dialog-content,
+.dark-mode .p-dialog .p-dialog-footer {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-dialog .p-dialog-header .p-dialog-title {
+  color: var(--text-color) !important;
+}
+.dark-mode .p-dialog .p-dialog-header .p-dialog-header-icon {
+  color: var(--text-color-secondary) !important;
+}
+
+/* ─── Form inputs ─────────────────────────────────────────────── */
+.dark-mode .p-inputtext,
+.dark-mode .p-dropdown,
+.dark-mode .p-inputnumber-input,
+.dark-mode .p-calendar .p-inputtext,
+.dark-mode .p-inputtextarea {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color) !important;
+  border-color: #444466 !important;
+}
+.dark-mode .p-inputtext::placeholder {
+  color: var(--text-color-secondary) !important;
+}
+.dark-mode .p-dropdown .p-dropdown-label {
+  color: var(--text-color) !important;
+}
+.dark-mode .p-dropdown .p-dropdown-trigger {
+  color: var(--text-color-secondary) !important;
+}
+.dark-mode .p-dropdown-panel,
+.dark-mode .p-dropdown-panel .p-dropdown-items-wrapper {
+  background-color: var(--surface-overlay) !important;
+  border-color: #444466 !important;
+}
+.dark-mode .p-dropdown-panel .p-dropdown-item {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color) !important;
+}
+.dark-mode .p-dropdown-panel .p-dropdown-item:hover,
+.dark-mode .p-dropdown-panel .p-dropdown-item.p-highlight {
+  background-color: var(--surface-card) !important;
+  color: #f69f43 !important;
+}
+.dark-mode .p-calendar .p-datepicker {
+  background-color: var(--surface-overlay) !important;
+  border-color: #444466 !important;
+  color: var(--text-color) !important;
+}
+.dark-mode .p-calendar .p-datepicker .p-datepicker-header {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-calendar .p-datepicker table td > span {
+  color: var(--text-color) !important;
+}
+
+/* ─── TabView ─────────────────────────────────────────────────── */
+.dark-mode .p-tabview .p-tabview-panels,
+.dark-mode .p-tabview .p-tabview-panel {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
+}
+.dark-mode .p-tabview .p-tabview-nav {
+  background-color: transparent !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color-secondary) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  background-color: var(--surface-card) !important;
+  color: #f69f43 !important;
+  border-color: #f69f43 !important;
+}
+
+/* ─── Accordion ───────────────────────────────────────────────── */
+.dark-mode .p-accordion .p-accordion-header .p-accordion-header-link {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+.dark-mode .p-accordion .p-accordion-content {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+  border-color: var(--surface-border) !important;
+}
+
+/* ─── Misc PrimeReact ─────────────────────────────────────────── */
+.dark-mode .p-message {
+  background-color: var(--surface-overlay) !important;
+}
+.dark-mode .p-selectbutton .p-button {
+  background-color: var(--surface-overlay) !important;
+  color: var(--text-color) !important;
+  border-color: #444466 !important;
+}
+.dark-mode .p-selectbutton .p-button.p-highlight {
+  background-color: #f69f43 !important;
+  color: #fff !important;
+  border-color: #f69f43 !important;
+}
+
+/* ─── Legacy selectors (kept for compat) ──────────────────────── */
+.dark-mode .pos-metric-card {
+  background-color: var(--surface-card) !important;
+  color: var(--text-color) !important;
+}
+.dark-mode .bottom-nav {
+  background-color: var(--surface-overlay) !important;
+  border-top: 1px solid #444466 !important;
+}
